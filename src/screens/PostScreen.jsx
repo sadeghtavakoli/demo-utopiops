@@ -51,7 +51,7 @@ function PostScreen(props) {
         <Input
           type="text"
           name="title"
-          label="title"
+          label="Title"
           value={data.title}
           error={errors.title}
           onChange={handleChange}
@@ -65,9 +65,14 @@ function PostScreen(props) {
           error={errors.body}
           onChange={handleChange}
         />
-        <button type="submit">Submit</button>
+        <button className="btn" type="submit">
+          Submit
+        </button>
       </form>
-      <button onClick={handleCancel}>Cancel</button>
+
+      <button className="btn" onClick={handleCancel}>
+        Cancel
+      </button>
     </main>
   );
 }
