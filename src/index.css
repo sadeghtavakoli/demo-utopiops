@@ -43,14 +43,14 @@ button {
     0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 /* Main root */
-.App {
+.main-screen {
   display: flex;
   flex-direction: row;
 }
 .container {
   background: var(--primary-color);
   margin-top: 6rem;
-  min-height: 100%;
+  min-height: 95vh;
   padding: 1rem 4rem;
   display: flex;
   flex-direction: column;

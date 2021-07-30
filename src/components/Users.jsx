@@ -19,7 +19,7 @@ function Users(props) {
     dispatch(loadUsers());
   }, []);
   return (
-    <div className="container users-container">
+    <main className="container users-container">
       <ul className="users-list">
         {users.map((user) => (
           <li key={user.id}>
@@ -36,7 +36,7 @@ function Users(props) {
           </li>
         ))}
       </ul>
-    </div>
+    </main>
   );
 }
 
