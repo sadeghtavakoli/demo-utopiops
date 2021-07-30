@@ -24,7 +24,11 @@ function Users(props) {
         {users.map((user) => (
           <li key={user.id}>
             <button
-              className="user-btn"
+              className={
+                user.id === selectedUser.id
+                  ? "user-btn btn-selectedUser"
+                  : "user-btn"
+              }
               onClick={() => handleUserSelect(user.id)}
             >
               {user.name}
