@@ -21,13 +21,12 @@ function Posts(props) {
     dispatch(loadPosts());
   }, []);
   return (
-    <div className="container">
-      Posts:
+    <div className="container posts-container">
       <ul className="postsList">
         {posts.map((post) => (
           <li key={post.id}>
             <button onClick={() => handlePostSelect(post.id)}>
-              {"Post#" + post.id + "/ " + post.title}
+              {post.title}
             </button>
           </li>
         ))}
