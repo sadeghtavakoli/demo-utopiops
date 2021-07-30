@@ -17,7 +17,6 @@ function Posts() {
   const handlePostSelect = async (postId) => {
     dispatch(selectPost(postId));
     history.push("/post");
-    // dispatch(updatePost("sadeghsdxdzffffff", "tavakolisdfffed"));
   };
 
   useEffect(() => {

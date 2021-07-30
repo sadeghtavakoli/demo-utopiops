@@ -16,6 +16,7 @@ const slice = createSlice({
     },
     postUpdated: (posts, action) => {
       const updatedPost = action.payload;
+      console.log("post updated", action.payload);
       const postId = updatedPost.id;
 
       const newPosts = posts.list.map((post) => {
